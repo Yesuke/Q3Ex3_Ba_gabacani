@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="bron"></p>
+    <p id="yezhua"></p>
+    <p id="jard"></p>
+    <script>
+        var rand= Math.floor(Math.random()*1001)
+        var thou = Math.floor(rand-999)*1000
+        var hunna= Math.floor(rand/100)*100
+        var tenny= Math.floor((rand%100)/10)*10
+        var uno = rand%10
+        var date=new Date()
+
+
+        document.getElementById("bron").innerHTML="Randomly generated number: "+rand;
+        document.getElementById("yezhua").innerHTML="Breakdown: " + hunna + "," + tenny + ","+uno;
+        document.getElementById("jard").innerHTML = "Date: " + date;
+
+    </script>
+</body>
+</html>
